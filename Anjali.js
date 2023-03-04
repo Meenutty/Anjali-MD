@@ -1534,11 +1534,6 @@ switch(command) {
     ]
     Anjali.sendList(m.chat, `Hi Chomie *${pushname}*`, `Please Select Below`, "CLICK", "ʀᴘɢ ɢᴀᴍᴇ ʙʏ ${global.botname} ", sectionnya, { quoted: m})
     break
-    
-         else jid = m.chat
-         m.reply(m.chat,jid)
-         }
-       break
 
 case 'mf' : {         
         let q = m.quoted ? m.quoted : m

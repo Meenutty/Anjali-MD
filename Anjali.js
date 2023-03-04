@@ -1807,6 +1807,88 @@ Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
 break
 
+
+ default:
+   if (budy.startsWith('=>')) {
+  if (!isCreator) return reply(global.owner)
+  function Return(sul) {
+sat = JSON.stringify(sul, null, 2)
+bang = util.format(sat)
+  if (sat == undefined) {
+ bang = util.format(sul)
+  }
+  return reply(bang)
+  }
+  try {
+reply(util.format(eval(`(async () => { return ${budy.slice(3)} })()`)))
+  } catch (e) {
+reply(String(e))
+  }
+   }
+
+   if (budy.startsWith('>')) {
+  if (!isCreator) return reply(global.owner)
+  try {
+let evaled = await eval(budy.slice(2))
+if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
+await reply(evaled)
+  } catch (err) {
+await reply(String(err))
+  }
+   }
+
+   if (budy.startsWith('$')) {
+  if (!isCreator) return reply(global.owner)
+  exec(budy.slice(2), (err, stdout) => {
+if(err) return reply(err)
+if (stdout) return reply(stdout)
+  })
+   }
+
+if (m.chat.endsWith('@s.whatsapp.net') && isCmd) {
+  this.anonymous = this.anonymous ? this.anonymous : {}
+  let room = Object.values(this.anonymous).find(room => [room.a, room.b].includes(m.sender) && room.state === 'CHATTING')
+  if (room) {
+if (/^.*(next|leave|start)/.test(m.text)) return
+if (['.next', '.leave', '.stop', '.start', 'Cari Partner', 'Keluar', 'Lanjut', 'Stop'].includes(m.text)) return
+let other = [room.a, room.b].find(user => user !== m.sender)
+m.copyNForward(other, true, m.quoted && m.quoted.fromMe ? {
+  contextInfo: {
+ ...m.msg.contextInfo,
+ forwardingScore: 0,
+ isForwarded: true,
+ participant: other
+  }
+} : {})
+  }
+  return !0
+   }
+   if (antiToxic)
+   if (bad.includes(wizbotv1)) {
+   if (m.text) {
+   wizv1 = `*ANTIBAD WORDS*\n\n*Lucky you, you are admin*`
+   if (isAdmins) return reply(wizv1)
+   if (m.key.fromMe) return reply(wizv1)
+   if (isCreator) return reply(wizv1)
+   kice = m.sender
+   await Anjali.groupParticipantsUpdate(m.chat, [kice], 'remove')
+   Anjali.sendMessage(from, {text:`*ANTIBAD WORDS*\n\n@${kice.split("@")[0]} *was kicked because of being rude to others in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+   }
+if (isCmd && budy.toLowerCase() != undefined) {
+    if (m.chat.endsWith('broadcast')) return
+    if (m.isBaileys) return
+    let msgs = global.db.database
+    if (!(budy.toLowerCase() in msgs)) return
+    Anjali.copyNForward(m.chat, msgs[budy.toLowerCase()], )
+}
+}
+
+
+    } catch (err) {
+m.reply(util.format(err))
+    }
+}
+
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 fs.unwatchFile(file)

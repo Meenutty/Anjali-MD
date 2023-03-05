@@ -1534,6 +1534,11 @@ switch(command) {
     ]
     Anjali.sendList(m.chat, `Hi Chomie *${pushname}*`, `Please Select Below`, "CLICK", "ʀᴘɢ ɢᴀᴍᴇ ʙʏ ${global.botname} ", sectionnya, { quoted: m})
     break
+    
+         else jid = m.chat
+         m.reply(m.chat,jid)
+         }
+       break
 
 case 'mf' : {         
         let q = m.quoted ? m.quoted : m
@@ -1575,11 +1580,11 @@ case 'list':
 │ ❐│ *ᴛɪᴍᴇ* : ${time}
 │ ❐│ *ᴘʀᴇғɪx* : ${prefix}
 │ ❐│ *ᴠᴇʀꜱɪᴏɴ:* 1.0
-│ ❐│ *sᴇʀᴠᴇʀ* : Flippy server
-│ ❐│ *ғʀᴀᴍᴇᴡᴏʀᴋ* : JavaScript 
+│ ❐│ *sᴇʀᴠᴇʀ* : Heroku
+│ ❐│ *ғʀᴀᴍᴇᴡᴏʀᴋ* : Nodejs
 │ ❐│ *ᴡᴇʙ ɪɴғᴏ* : Baileys
 │ ❐│ *ᴛᴏᴛᴀʟ ᴜsᴇʀs:* ${Object.keys(global.db.users).length}
-│ ❐│ *sᴛᴏʀᴀɢᴇ* : 467/500GB
+│ ❐│ *sᴛᴏʀᴀɢᴇ* : 467/500GB.
 ┕━━━━━━━━━━━━━━━━━━━━━
 `,
   footer: watermark,
@@ -1756,7 +1761,8 @@ Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }}
 buffer = await getBuffer(picak+'OWNER MENU')
 ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
 anu = `
-Hellooo shoesss veno 
+
+under maintenance 
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -1772,8 +1778,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -1805,8 +1811,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -1838,8 +1844,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -1871,8 +1877,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -1904,8 +1910,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -1937,8 +1943,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -1970,8 +1976,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -2003,8 +2009,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -2036,8 +2042,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -2069,8 +2075,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -2102,8 +2108,8 @@ hydratedButtons: [{
 }
 }, {
 urlButton: {
-displayText: 'GITHUB',
-url: 'https://github.com/Jackz-ser'
+displayText: 'INSTA',
+url: 'https://instagram.com/_flippy_store_'
 }
 }
 ]
@@ -2113,88 +2119,6 @@ url: 'https://github.com/Jackz-ser'
 Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
 break
-
-
- default:
-   if (budy.startsWith('=>')) {
-  if (!isCreator) return reply(global.owner)
-  function Return(sul) {
-sat = JSON.stringify(sul, null, 2)
-bang = util.format(sat)
-  if (sat == undefined) {
- bang = util.format(sul)
-  }
-  return reply(bang)
-  }
-  try {
-reply(util.format(eval(`(async () => { return ${budy.slice(3)} })()`)))
-  } catch (e) {
-reply(String(e))
-  }
-   }
-
-   if (budy.startsWith('>')) {
-  if (!isCreator) return reply(global.owner)
-  try {
-let evaled = await eval(budy.slice(2))
-if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
-await reply(evaled)
-  } catch (err) {
-await reply(String(err))
-  }
-   }
-
-   if (budy.startsWith('$')) {
-  if (!isCreator) return reply(global.owner)
-  exec(budy.slice(2), (err, stdout) => {
-if(err) return reply(err)
-if (stdout) return reply(stdout)
-  })
-   }
-
-if (m.chat.endsWith('@s.whatsapp.net') && isCmd) {
-  this.anonymous = this.anonymous ? this.anonymous : {}
-  let room = Object.values(this.anonymous).find(room => [room.a, room.b].includes(m.sender) && room.state === 'CHATTING')
-  if (room) {
-if (/^.*(next|leave|start)/.test(m.text)) return
-if (['.next', '.leave', '.stop', '.start', 'Cari Partner', 'Keluar', 'Lanjut', 'Stop'].includes(m.text)) return
-let other = [room.a, room.b].find(user => user !== m.sender)
-m.copyNForward(other, true, m.quoted && m.quoted.fromMe ? {
-  contextInfo: {
- ...m.msg.contextInfo,
- forwardingScore: 0,
- isForwarded: true,
- participant: other
-  }
-} : {})
-  }
-  return !0
-   }
-   if (antiToxic)
-   if (bad.includes(wizbotv1)) {
-   if (m.text) {
-   wizv1 = `*ANTIBAD WORDS*\n\n*Lucky you, you are admin*`
-   if (isAdmins) return reply(wizv1)
-   if (m.key.fromMe) return reply(wizv1)
-   if (isCreator) return reply(wizv1)
-   kice = m.sender
-   await Anjali.groupParticipantsUpdate(m.chat, [kice], 'remove')
-   Anjali.sendMessage(from, {text:`*ANTIBAD WORDS*\n\n@${kice.split("@")[0]} *was kicked because of being rude to others in this group*`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
-   }
-if (isCmd && budy.toLowerCase() != undefined) {
-    if (m.chat.endsWith('broadcast')) return
-    if (m.isBaileys) return
-    let msgs = global.db.database
-    if (!(budy.toLowerCase() in msgs)) return
-    Anjali.copyNForward(m.chat, msgs[budy.toLowerCase()], )
-}
-}
-
-
-    } catch (err) {
-m.reply(util.format(err))
-    }
-}
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {

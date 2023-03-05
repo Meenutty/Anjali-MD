@@ -1470,20 +1470,20 @@ switch(command) {
     "title": `MISSION 1`,
      rows: [
     {
-    "title": `KILLING SLIME`,
+    "title": `SHOES`,
     "description": `Hunting Slimes For Rewards`,
-    "rowId": `${prefix}slime`
+    "rowId": `${prefix}shoes`
     }
     ]
     }
     ,
     {
-    "title": `MISSION 2`,
+    "title": `BAGS`,
      rows: [
     {
     "title": `KILLING GOBLIN`,
     "description": `Hunt Globin To Get Rewards`,
-    "rowId": `${prefix}goblin`
+    "rowId": `${prefix}bags`
     }
     ]
     }
@@ -1492,9 +1492,9 @@ switch(command) {
     "title": `MISSION 3`,
      rows: [
     {
-    "title": `KILLING DEVIL`,
+    "title": `Airpode`,
     "description": `Hunt Devils To Get Rewards`,
-    "rowId": `${prefix}devil`
+    "rowId": `${prefix}airpode`
     }
     ]
     }

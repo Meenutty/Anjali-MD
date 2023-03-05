@@ -2517,7 +2517,7 @@ case 'nike':
   }
   sect.push(list)   
   }
-  const sendm =  Anjali.sendMessage(
+  const sendmnn =  Anjali.sendMessage(
   m.chat, 
   {
   text: `

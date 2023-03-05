@@ -2509,7 +2509,7 @@ case 'nike':
   const list = {title: 'MENU NUMBER ' + nombo++,                                                                             //by drips
   rows: [
   {
-  title: `${listmenuu[startnu++]}`,
+  title: `${listmeuu[startnu++]}`,
   
   rowId: `${prefix}${x}`
   }, 
@@ -2530,8 +2530,10 @@ SELECT YOUR BUDGET
   sect
   }, { quoted : m })
 break
-case 'undfive'
+case 'undfive':
 Anjali.sendMessage(m.chat, {text: 'umbiko'}, { quoted : m })
+break
+
 
 default:
    if (budy.startsWith('=>')) {

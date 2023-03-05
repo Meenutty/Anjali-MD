@@ -2427,8 +2427,8 @@ SHOESSS
       }
     }
 break
-case 'adidas':
-    let sectionnya= [
+  case 'adidas':
+    let text = [
     {
     "title": `Menu 1`,
      rows: [
@@ -2495,7 +2495,7 @@ case 'adidas':
     ]
     }
     ]
-    Anjali.sendList(m.chat, `Hi Bro *${pushname}*`, `Please Select Below`, "CLICK", "What's your budget", sectionnya, { quoted: m})
+    Anjali.sendList(m.chat, `Hi Bro *${pushname}*`, `Please Select Below`, "CLICK", "What's your budget", text , { quoted: m})
     break
 case 'nike':            
   let sections = []   

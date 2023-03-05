@@ -1575,11 +1575,11 @@ case 'list':
 │ ❐│ *ᴛɪᴍᴇ* : ${time}
 │ ❐│ *ᴘʀᴇғɪx* : ${prefix}
 │ ❐│ *ᴠᴇʀꜱɪᴏɴ:* 1.0
-│ ❐│ *sᴇʀᴠᴇʀ* : Heroku
-│ ❐│ *ғʀᴀᴍᴇᴡᴏʀᴋ* : Nodejs
+│ ❐│ *sᴇʀᴠᴇʀ* : Flippy server
+│ ❐│ *ғʀᴀᴍᴇᴡᴏʀᴋ* : JavaScript 
 │ ❐│ *ᴡᴇʙ ɪɴғᴏ* : Baileys
 │ ❐│ *ᴛᴏᴛᴀʟ ᴜsᴇʀs:* ${Object.keys(global.db.users).length}
-│ ❐│ *sᴛᴏʀᴀɢᴇ* : 467/500GB.
+│ ❐│ *sᴛᴏʀᴀɢᴇ* : 467/500GB
 ┕━━━━━━━━━━━━━━━━━━━━━
 `,
   footer: watermark,
@@ -1756,30 +1756,337 @@ Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }}
 buffer = await getBuffer(picak+'OWNER MENU')
 ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
 anu = `
+Hellooo shoesss veno 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'bags': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
 
- chatbot on/off
- setmenu -option-
- checkupdate 
- updatenow
- bc -text-
- bcall -text-
- bctext -text-
- bcvideo -media-
- bcaudio -media-
- bcimage -media-
- bcloc  -text-
- bcgc -text-
- lockcmd
- setstatus -text-
- setppbot -owner-
- block -owner-
- unblock -owner-
- join -owner-
- leave -owner-
- chat -owner-
- public
- self
- grouponly
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'normalwatches': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'vape': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'smartwatches': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'airpods': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'neckbands': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'wiredearphones': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'speakers': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'shirts': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
+`
+let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+imageMessage: message.imageMessage,
+hydratedContentText: anu,
+hydratedFooterText: `${global.botname}`,
+hydratedButtons: [{        
+"urlButton": {
+"displayText": "GROUP",
+"url": `${global.group}`
+}
+}, {
+urlButton: {
+displayText: 'GITHUB',
+url: 'https://github.com/Jackz-ser'
+}
+}
+]
+}
+}
+}), { userJid: m.chat })
+Anjali.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+break
+case 'pants': {
+Anjali.sendMessage(m.chat, { react: { text: `${global.reactmoji}`, key: m.key }})
+buffer = await getBuffer(picak+'OWNER MENU')
+ram3 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+anu = `
+
+under maintenance 
 `
 let message = await prepareWAMessageMedia({ image: buffer, jpegThumbnail:buffer }, { upload: Anjali.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({

@@ -2498,24 +2498,24 @@ break
     Anjali.sendList(m.chat, `Hi Bro *${pushname}*`, `Please Select Below`, "CLICK", "What's your budget", text , { quoted: m})
     break
 case 'nike':            
-  let sections = []   
-  let listmenu = [`undfive','undthou','undfivthou']
-  let listmenuu = [`UNDER 500','UNDER 1000','UNDER 1500']
+  let sect = []   
+  let listmeu = ['undfive','undthou','undfivthou']
+  let listmeuu = ['UNDER 500','UNDER 1000','UNDER 1500']
   
-  let nombor = 1
-  let startnum = 0
+  let nombo = 1
+  let startnu = 0
   
-  for (let x of listmenu) {
-  const list = {title: 'MENU NUMBER ' + nombor++,                                                                             //by drips
+  for (let x of listmeu) {
+  const list = {title: 'MENU NUMBER ' + nombo++,                                                                             //by drips
   rows: [
   {
-  title: `${listmenuu[startnum++]}`,
+  title: `${listmenuu[startnu++]}`,
   
   rowId: `${prefix}${x}`
   }, 
   ]
   }
-  sections.push(list)   
+  sect.push(list)   
   }
   const sendm =  Anjali.sendMessage(
   m.chat, 
@@ -2527,7 +2527,7 @@ SELECT YOUR BUDGET
   title: `*LIST MENU*`,
   jpegThumbnail: buffer,
   buttonText: "CLICK HERE",
-  sections
+  sect
   }, { quoted : m })
 break
 case 'undfive'

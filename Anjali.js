@@ -1547,7 +1547,16 @@ Anjali.sendMessage(text, {audio: media, mimetype: 'audio/mpeg', ptt: true, conte
 
 //❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 //❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-case 'list':            
+case 'list': 
+  let datane = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(datane)
+randIndex = Math.floor(Math.random() * jsonData.length)
+randKey = jsonData[randIndex];
+buffer = await getBuffer(randKey.result)
+const { device_manufacturer } = require('os')
+ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+timestampe = speed();
+latensie = speed() - timestampe
   let sections = []   
   let listmenu = [`shoes`,`normalwatches`,`bags`,`shirts`,`pants`,`airpods`,`smartwatches`,`vape`,`wiredearphones`,`neckbands`,`speakers`]
   let listmenuu = [`SHOES`,`NORMAL WATCHES`,`BAGS`,`SHIRTS`,`PANTS`,`AIRPODS`,`SMART WATCHES`,`VAPE`,`WIRED EARPHONES`,`NECKBANDS`,`SPEAKERS`]
@@ -1593,6 +1602,15 @@ case 'list':
   }, { quoted : m })
 break
 case 'shoes': case 'shoesss':
+  let datane = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(datane)
+randIndex = Math.floor(Math.random() * jsonData.length)
+randKey = jsonData[randIndex];
+buffer = await getBuffer(randKey.result)
+const { device_manufacturer } = require('os')
+ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+timestampe = speed();
+latensie = speed() - timestampe
   let section = []   
   let istmenu = [`nike`,`adidas`,`puma`,`nb`]
   let istmenuu = [`NIKE`,`ADIDAS`,`PUMA`,`NEW BALANCE`]
@@ -1628,6 +1646,15 @@ SELECT SHOE BRAND 😌🖖🏻
   }, { quoted : m })
 break
   case 'adidas':
+let datane = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(datane)
+randIndex = Math.floor(Math.random() * jsonData.length)
+randKey = jsonData[randIndex];
+buffer = await getBuffer(randKey.result)
+const { device_manufacturer } = require('os')
+ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+timestampe = speed();
+latensie = speed() - timestampe
     let text = [
     {
     "title": `Menu 1`,
@@ -1698,6 +1725,15 @@ break
     Anjali.sendList(m.chat, `Hi Bro *${pushname}*`, `Please Select Below`, "CLICK", "What's your budget", text , { quoted: m})
     break
 case 'nike':            
+let datane = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(datane)
+randIndex = Math.floor(Math.random() * jsonData.length)
+randKey = jsonData[randIndex];
+buffer = await getBuffer(randKey.result)
+const { device_manufacturer } = require('os')
+ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
+timestampe = speed();
+latensie = speed() - timestampe
   let sect = []   
   let listmeu = [`undfive`,`undthou`,`undfivthou`]
   let listmeuu = [`UNDER 500`,`UNDER 1000`,`UNDER 1500`]

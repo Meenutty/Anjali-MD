@@ -1548,8 +1548,8 @@ Anjali.sendMessage(text, {audio: media, mimetype: 'audio/mpeg', ptt: true, conte
 //❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 //❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 case 'list': 
-  let datane = fs.readFileSync('./Launcher/lib/random.js')
-jsonData = JSON.parse(datane)
+  let datan = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(datan)
 randIndex = Math.floor(Math.random() * jsonData.length)
 randKey = jsonData[randIndex];
 buffer = await getBuffer(randKey.result)
@@ -1602,8 +1602,8 @@ latensie = speed() - timestampe
   }, { quoted : m })
 break
 case 'shoes': case 'shoesss':
-  let datane = fs.readFileSync('./Launcher/lib/random.js')
-jsonData = JSON.parse(datane)
+  let dataneee = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(dataneee)
 randIndex = Math.floor(Math.random() * jsonData.length)
 randKey = jsonData[randIndex];
 buffer = await getBuffer(randKey.result)
@@ -1646,8 +1646,8 @@ SELECT SHOE BRAND 😌🖖🏻
   }, { quoted : m })
 break
   case 'adidas':
-let datane = fs.readFileSync('./Launcher/lib/random.js')
-jsonData = JSON.parse(datane)
+let atane = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(atane)
 randIndex = Math.floor(Math.random() * jsonData.length)
 randKey = jsonData[randIndex];
 buffer = await getBuffer(randKey.result)
@@ -1725,8 +1725,8 @@ latensie = speed() - timestampe
     Anjali.sendList(m.chat, `Hi Bro *${pushname}*`, `Please Select Below`, "CLICK", "What's your budget", text , { quoted: m})
     break
 case 'nike':            
-let datane = fs.readFileSync('./Launcher/lib/random.js')
-jsonData = JSON.parse(datane)
+let daane = fs.readFileSync('./Launcher/lib/random.js')
+jsonData = JSON.parse(daane)
 randIndex = Math.floor(Math.random() * jsonData.length)
 randKey = jsonData[randIndex];
 buffer = await getBuffer(randKey.result)

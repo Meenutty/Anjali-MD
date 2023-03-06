@@ -1614,17 +1614,17 @@ latensie = speed() - timestampe
   let ombor = 1
   let tartnum = 0
   
-  for (let x of istmenu) {
-  const list = {title: 'MENU NUMBER ' + ombor++,                                                                             //by drips
+  for (let y of istmenu) {
+  const listt = {title: 'MENU NUMBER ' + ombor++,                                                                             //by drips
   rows: [
   {
   title: `${istmenuu[tartnum++]}`,
   
-  rowId: `${prefix}${x}`
+  rowId: `${prefix}${y}`
   }, 
   ]
   }
-  section.push(list)   
+  section.push(listt)   
   }
   const sedm =  Anjali.sendMessage(
   m.chat, 
@@ -1733,17 +1733,17 @@ latensie = speed() - timestampe
   let nombo = 1
   let startnu = 0
   
-  for (let x of listmeu) {
-  const list = {title: 'MENU NUMBER ' + nombo++,                                                                             //by drips
+  for (let z of listmeu) {
+  const lisst = {title: 'MENU NUMBER ' + nombo++,                                                                             //by drips
   rows: [
   {
   title: `${listmeuu[startnu++]}`,
   
-  rowId: `${prefix}${x}`
+  rowId: `${prefix}${z}`
   }, 
   ]
   }
-  sect.push(list)   
+  sect.push(lisst)   
   }
   const sendmnn =  Anjali.sendMessage(
   m.chat, 

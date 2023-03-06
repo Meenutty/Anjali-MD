@@ -1593,26 +1593,26 @@ case 'list':
   }, { quoted : m })
 break
 case 'shoes': case 'shoesss':
-  let sections = []   
-  let listmenu = [`nike`,`adidas`,`puma`,`nb`]
-  let listmenuu = [`NIKE`,`ADIDAS`,`PUMA`,`NEW BALANCE`]
+  let section = []   
+  let istmenu = [`nike`,`adidas`,`puma`,`nb`]
+  let istmenuu = [`NIKE`,`ADIDAS`,`PUMA`,`NEW BALANCE`]
   
-  let nombor = 1
-  let startnum = 0
+  let ombor = 1
+  let tartnum = 0
   
-  for (let x of listmenu) {
-  const list = {title: 'MENU NUMBER ' + nombor++,                                                                             //by drips
+  for (let x of istmenu) {
+  const list = {title: 'MENU NUMBER ' + ombor++,                                                                             //by drips
   rows: [
   {
-  title: `${listmenuu[startnum++]}`,
+  title: `${istmenuu[tartnum++]}`,
   
   rowId: `${prefix}${x}`
   }, 
   ]
   }
-  sections.push(list)   
+  section.push(list)   
   }
-  const sendm =  Anjali.sendMessage(
+  const sedm =  Anjali.sendMessage(
   m.chat, 
   {
   text: `
@@ -1624,7 +1624,7 @@ SELECT SHOE BRAND 😌🖖🏻
   title: `*LIST MENU*`,
   jpegThumbnail: buffer,
   buttonText: "CLICK HERE",
-  sections
+  section
   }, { quoted : m })
 break
   case 'adidas':
